@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build with OpenMP",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-fopenmp",
+                "D:/ttss/test.c",
+                "-o",
+                "D:/ttss/test"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compile a C file with OpenMP enabled."
+        }
+    ]
+}
